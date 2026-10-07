@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Rathan | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+        section {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        .skill-badge {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+        .project-card h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .project-card h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .project-card h3 a:hover {
+            color: var(--accent);
+        }
+        .project-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .btn:hover {
+            background-color: var(--accent);
+            color: var(--bg-color);
+        }
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <h1>Joshua Rathan</h1>
+            <p>B.Tech CSE Student & Aspiring Software Engineer</p>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>I am a dedicated 3rd-semester B.Tech Computer Science and Engineering student with a strong passion for software development and core algorithmic problem-solving. My academic focus centers on building clean, efficient, and robust applications while mastering data structures across multiple programming paradigms.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">C</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">VS Code</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects & Repositories</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3><a href="https://github.com/josh-bot-cloud/hello-world-c" target="_blank">Hello World C</a></h3>
+                    <p>My foundational C programming project establishing development environments, compilation pipelines, and basic syntax structures.</p>
+                    <a href="https://github.com/josh-bot-cloud/hello-world-c" class="btn" target="_blank">View Repository</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3><a href="https://github.com/josh-bot-cloud" target="_blank">LeetCode & Algorithms Portfolio</a></h3>
+                    <p>A structured collection of optimized algorithmic solutions in C and C++ covering Hash Maps, Two-Pointers, Stacks, and Monotonic Stacks.</p>
+                    <a href="https://github.com/josh-bot-cloud" class="btn" target="_blank">View GitHub Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Connect with me on GitHub: <a href="https://github.com/josh-bot-cloud" target="_blank">@josh-bot-cloud</a></p>
+            <p>&copy; 2026 Joshua Rathan. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
